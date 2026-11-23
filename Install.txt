@@ -1,0 +1,30 @@
+G3010 USB Scan 1.2 for Intel Mac
+
+Installation
+
+1. Open the disk image and drag G3010 USB Scan to Applications.
+2. Eject the disk image. Open G3010 USB Scan from Applications.
+3. Connect the Canon PIXMA G3010 by USB, turn it on, and click Refresh.
+   Place a page face down on the flatbed and click Scan page.
+
+The app includes its USB scanner driver. It runs offline and saves files to the
+location you choose. Homebrew, Xcode, and separate Canon software are optional
+developer tools or software and are unnecessary for scanning.
+
+Compatibility
+
+The app and its scanner driver are Intel 64-bit binaries targeting macOS 14.0
+or later. USB scanning has been tested on an Intel Mac running Sonoma 14.8.9.
+Other Macs and macOS releases have not been hardware-tested.
+
+This is a locally signed build without Apple notarization. If macOS shows an
+unidentified-developer warning and you trust this copy, follow Apple's
+per-app approval instructions at https://support.apple.com/en-us/102445.
+
+Source and licenses
+
+The Source folder in the disk image includes the Swift files, build scripts,
+USB configuration, prebuilt helper, dependency sources, checksums and licenses.
+Copy that folder to a writable location to build or edit the app.
+Run ./build.sh there to build an app with Xcode's Swift compiler on Intel Mac.
+Run ./package.sh to produce a new disk image.
